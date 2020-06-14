@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3281750850657293414}
   - component: {fileID: 3281750850657293413}
   - component: {fileID: 3281750850657293412}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MapCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
