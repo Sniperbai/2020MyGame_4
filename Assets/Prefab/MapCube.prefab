@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3281750850657293415}
   - component: {fileID: 3281750850657293414}
   - component: {fileID: 3281750850657293413}
+  - component: {fileID: -1661545483452701858}
   - component: {fileID: 3281750850657293412}
   m_Layer: 8
   m_Name: MapCube
@@ -80,6 +81,18 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &-1661545483452701858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3281750850657293419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b135e2bd61534dd697025d070def164, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &3281750850657293412
 BoxCollider:
   m_ObjectHideFlags: 0

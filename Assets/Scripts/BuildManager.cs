@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class BuildManager : MonoBehaviour
 {
@@ -10,7 +11,17 @@ public class BuildManager : MonoBehaviour
     public TurretData standardTurretData;
 
     //表示当前选择的炮台（要建造的炮台）
-    public  TurretData selectedTurretData;
+    private  TurretData selectedTurretData;
+
+    public Text moneyText;
+
+    public int money = 1000;
+
+    void ChangeMoney(int change = 0)
+    {
+        money += change;
+        moneyText.text = "¥" + money;
+    }
 
     void Update()
     {
@@ -24,7 +35,24 @@ public class BuildManager : MonoBehaviour
                 bool isCollider = Physics.Raycast(ray, out hit, 1000, LayerMask. GetMask("MapCube"));
                 if (isCollider) 
                 {
-                    GameObject mapCube = hit.collider.gameObject; //得到点击的mapcube
+                    MapCube mapCube = hit.collider.GetComponent<MapCube>();
+                    if (mapCube.turretGo == null)
+                    {
+                        //可以创建
+                        if (money > selectedTurretData.cost)
+                        {
+                            ChangeMoney(-selectedTurretData.cost);
+                            mapCube.BuildTurret(selectedTurretData.turretPrefab);
+                        }
+                        else
+                        {
+                            //TODO 提示钱不够
+                        }
+                    }
+                    else
+                    {
+                        //TODO  升级处理
+                    }
                 }
             }
         }
