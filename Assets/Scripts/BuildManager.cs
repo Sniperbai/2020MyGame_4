@@ -17,6 +17,8 @@ public class BuildManager : MonoBehaviour
 
     public int money = 1000;
 
+    public Animator animatorMoney;
+
     void ChangeMoney(int change = 0)
     {
         money += change;
@@ -47,6 +49,7 @@ public class BuildManager : MonoBehaviour
                         else
                         {
                             //TODO 提示钱不够
+                            animatorMoney.SetTrigger("flicker");
                         }
                     }
                     else

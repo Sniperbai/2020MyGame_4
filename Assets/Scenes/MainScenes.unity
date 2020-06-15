@@ -7643,6 +7643,7 @@ GameObject:
   - component: {fileID: 841128513}
   - component: {fileID: 841128512}
   - component: {fileID: 841128511}
+  - component: {fileID: 841128514}
   m_Layer: 5
   m_Name: Money
   m_TagString: Untagged
@@ -7724,6 +7725,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 841128509}
   m_CullTransparentMesh: 0
+--- !u!95 &841128514
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 841128509}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ebab467a234a8de40b3ff952ace53193, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &843530195
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9383,6 +9403,7 @@ MonoBehaviour:
     type: 2
   moneyText: {fileID: 841128512}
   money: 1000
+  animatorMoney: {fileID: 841128514}
 --- !u!1 &1090207467
 GameObject:
   m_ObjectHideFlags: 0
