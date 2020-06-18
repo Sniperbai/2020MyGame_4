@@ -21,4 +21,32 @@ public class Turret : MonoBehaviour
             enemys.Remove(col.gameObject);
         }
     }
+
+    public float attackRateTime = 1; //多少秒攻击一次
+
+    private float timer = 0;
+
+    public GameObject bulletPrefab; //子弹
+
+    public Transform firePosition;
+
+    void Start()
+    {
+        timer = attackRateTime;
+    }
+
+    void Update()
+    {
+        timer += Time.deltaTime;
+        if (enemys.Count > 0 && timer >= attackRateTime)
+        {
+            timer -= attackRateTime;
+            Attack();
+        }
+    }
+
+    void Attack()
+    {
+        GameObject.Instantiate(bulletPrefab, firePosition.position, firePosition.rotation);
+    }
 }

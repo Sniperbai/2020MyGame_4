@@ -38,7 +38,7 @@ public class BuildManager : MonoBehaviour
                 if (isCollider) 
                 {
                     MapCube mapCube = hit.collider.GetComponent<MapCube>();
-                    if (mapCube.turretGo == null)
+                    if (selectedTurretData != null && mapCube.turretGo == null)
                     {
                         //可以创建
                         if (money > selectedTurretData.cost)
@@ -52,7 +52,7 @@ public class BuildManager : MonoBehaviour
                             animatorMoney.SetTrigger("flicker");
                         }
                     }
-                    else
+                    else if(mapCube.turretGo != null)
                     {
                         //TODO  升级处理
                     }
