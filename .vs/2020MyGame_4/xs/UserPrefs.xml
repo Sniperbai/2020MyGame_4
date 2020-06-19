@@ -1,9 +1,11 @@
 ﻿<Properties StartupConfiguration="{49B5ED5F-9294-578D-7FC5-01B57534E7FC}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BuildManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Bullet.cs">
     <Files>
       <File FileName="Assets/Scripts/MapCube.cs" Line="12" Column="1" />
       <File FileName="Assets/Scripts/BuildManager.cs" Line="55" Column="54" />
-      <File FileName="Assets/Scripts/Turret.cs" Line="41" Column="57" />
+      <File FileName="Assets/Scripts/Turret.cs" Line="51" Column="70" />
+      <File FileName="Assets/Scripts/Bullet.cs" Line="32" Column="38" />
+      <File FileName="Assets/Scripts/Enemy.cs" Line="51" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,7 +13,7 @@
           <Node name="2020MyGame_4" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="BuildManager.cs" selected="True" />
+                <Node name="Bullet.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -21,7 +23,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="383dceb5-fb19-4572-9fee-1d60d04b01e0" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="355f308f-0697-45c0-954e-92ad80f7f54a" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

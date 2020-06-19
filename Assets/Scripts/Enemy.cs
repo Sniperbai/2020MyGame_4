@@ -46,4 +46,8 @@ public class Enemy : MonoBehaviour
         EnemySpawner.CountEnemyAlive--;
     }
 
+    public void TakeDamage(int damage)
+    {
+
+    }
 }
