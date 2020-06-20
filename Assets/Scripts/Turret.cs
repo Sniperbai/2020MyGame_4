@@ -24,7 +24,7 @@ public class Turret : MonoBehaviour
 
     public float attackRateTime = 1; //多少秒攻击一次
 
-    private float timer = 0;
+    public float timer = 0;
 
     public GameObject bulletPrefab; //子弹
 
@@ -40,7 +40,7 @@ public class Turret : MonoBehaviour
         timer += Time.deltaTime;
         if (enemys.Count > 0 && timer >= attackRateTime)
         {
-            timer -= attackRateTime;
+            timer = 0;
             Attack();
         }
     }
