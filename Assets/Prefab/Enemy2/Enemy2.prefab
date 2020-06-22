@@ -107,4 +107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 15
+  hp: 110
+  effectExplosion: {fileID: 6555733669258214493, guid: edd5532a6b9d76b4cb5c1936cf600d36,
+    type: 3}
   positions: []

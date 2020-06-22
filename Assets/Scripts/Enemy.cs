@@ -5,6 +5,8 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public float speed = 10;
+    public int hp = 150;
+    public GameObject effectExplosion;
     public Transform[] positions;
     private int index = 0;
 
@@ -48,6 +50,18 @@ public class Enemy : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        if (hp <= 0) return;
+        hp -= damage;
+        if (hp <= 0) 
+        {
+            Die();
+        }
+    }
 
+    public void Die() 
+    {
+        GameObject effect = GameObject.Instantiate(effectExplosion,transform.position, transform.rotation);
+        Destroy(effect, 1.5f);
+        Destroy(this.gameObject);
     }
 }
