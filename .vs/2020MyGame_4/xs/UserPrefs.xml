@@ -3,8 +3,8 @@
     <Files>
       <File FileName="Assets/Scripts/MapCube.cs" Line="12" Column="1" />
       <File FileName="Assets/Scripts/BuildManager.cs" />
-      <File FileName="Assets/Scripts/Turret.cs" Line="81" Column="10" />
-      <File FileName="Assets/Scripts/Bullet.cs" Line="32" Column="38" />
+      <File FileName="Assets/Scripts/Turret.cs" Line="53" Column="41" />
+      <File FileName="Assets/Scripts/Bullet.cs" />
       <File FileName="Assets/Scripts/Enemy.cs" />
     </Files>
     <Pads>

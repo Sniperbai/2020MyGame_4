@@ -30,6 +30,8 @@ public class Turret : MonoBehaviour
 
     public Transform firePosition;
 
+    public Transform head;
+
     void Start()
     {
         timer = attackRateTime;
@@ -42,6 +44,14 @@ public class Turret : MonoBehaviour
         {
             timer = 0;
             Attack();
+        }
+
+        if (enemys.Count > 0 && enemys[0] != null)
+        {
+            Vector3 targetPosition = enemys[0].transform.position;
+            targetPosition.y = head.position.y;
+            head.LookAt(targetPosition);
+
         }
     }
 
