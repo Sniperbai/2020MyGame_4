@@ -19,6 +19,10 @@ public class BuildManager : MonoBehaviour
 
     public Animator animatorMoney;
 
+    public GameObject upgradeCanvas;
+
+    public Button buttonUpgrade;
+
     void ChangeMoney(int change = 0)
     {
         money += change;
@@ -83,5 +87,27 @@ public class BuildManager : MonoBehaviour
         {
             selectedTurretData = standardTurretData;
         }
+    }
+
+    void ShowUpgradeUI(Vector3 pos, bool isDisableUpgrade =false)
+    {
+        upgradeCanvas.SetActive(true);
+        upgradeCanvas.transform.position = pos;
+        buttonUpgrade.interactable = !isDisableUpgrade;
+    }
+
+    void HideUpgradeUI()
+    {
+        upgradeCanvas.SetActive(false);
+    }
+
+    public void OnUpgradeButtonDown()
+    {
+        //TODO
+    }
+
+    public void OnDestroyButtonDown()
+    {
+       //TODO
     }
 }
