@@ -12,6 +12,8 @@ public class BuildManager : MonoBehaviour
 
     //表示当前选择的炮台（要建造的炮台）
     private  TurretData selectedTurretData;
+    //表示当前选择的炮台（场景中的游戏物体）
+    private GameObject selectedTurretGo;
 
     public Text moneyText;
 
@@ -58,7 +60,27 @@ public class BuildManager : MonoBehaviour
                     }
                     else if(mapCube.turretGo != null)
                     {
-                        //TODO  升级处理
+                        //  升级处理
+                        
+
+                        //if (mapCube.isUpgraded)
+                        //{
+                        //    ShowUpgradeUI(mapCube.transform.position, true);
+                        //}
+                        //else
+                        //{
+                        //    ShowUpgradeUI(mapCube.transform.position, false);
+                        //}
+
+                        if (mapCube.turretGo == selectedTurretGo && upgradeCanvas.activeInHierarchy)
+                        {
+                            HideUpgradeUI();
+                        }
+                        else
+                        {
+                            ShowUpgradeUI(mapCube.transform.position, mapCube.isUpgraded);
+                        }
+                        selectedTurretGo = mapCube.turretGo;
                     }
                 }
             }
