@@ -25,10 +25,17 @@ public class BuildManager : MonoBehaviour
 
     public Button buttonUpgrade;
 
+    private Animator upgradeCanvasAnimator;
+
     void ChangeMoney(int change = 0)
     {
         money += change;
         moneyText.text = "¥" + money;
+    }
+
+    void Start()
+    {
+        upgradeCanvasAnimator = upgradeCanvas.GetComponent <Animator> ();
     }
 
     void Update()
@@ -74,7 +81,7 @@ public class BuildManager : MonoBehaviour
 
                         if (mapCube.turretGo == selectedTurretGo && upgradeCanvas.activeInHierarchy)
                         {
-                            HideUpgradeUI();
+                            StartCoroutine(HideUpgradeUI());
                         }
                         else
                         {
@@ -113,13 +120,18 @@ public class BuildManager : MonoBehaviour
 
     void ShowUpgradeUI(Vector3 pos, bool isDisableUpgrade =false)
     {
+        StopCoroutine("HideUpgradeUI");
+        upgradeCanvas.SetActive(false);
         upgradeCanvas.SetActive(true);
         upgradeCanvas.transform.position = pos;
         buttonUpgrade.interactable = !isDisableUpgrade;
     }
 
-    void HideUpgradeUI()
+    IEnumerator HideUpgradeUI()
     {
+        upgradeCanvasAnimator.SetTrigger("Hide");
+        //upgradeCanvas.SetActive(false);
+        yield return new WaitForSeconds(0.6f);
         upgradeCanvas.SetActive(false);
     }
 

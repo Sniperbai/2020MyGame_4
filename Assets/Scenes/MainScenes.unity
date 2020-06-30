@@ -10982,34 +10982,9 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 975335688004190128, guid: 86233d5ef3f53bd4781303df4a21a247,
         type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 975335688004190128, guid: 86233d5ef3f53bd4781303df4a21a247,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 975335688004190128, guid: 86233d5ef3f53bd4781303df4a21a247,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 975335688004190128, guid: 86233d5ef3f53bd4781303df4a21a247,
-        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1074808219}
-    - target: {fileID: 975335688004190128, guid: 86233d5ef3f53bd4781303df4a21a247,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnUpgradeButtonDown
-      objectReference: {fileID: 0}
-    - target: {fileID: 975335688004190128, guid: 86233d5ef3f53bd4781303df4a21a247,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 975335688007149021, guid: 86233d5ef3f53bd4781303df4a21a247,
         type: 3}
       propertyPath: m_Name
@@ -11033,7 +11008,7 @@ PrefabInstance:
     - target: {fileID: 975335688007149022, guid: 86233d5ef3f53bd4781303df4a21a247,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.17364825
+      value: 0.17364816
       objectReference: {fileID: 0}
     - target: {fileID: 975335688007149022, guid: 86233d5ef3f53bd4781303df4a21a247,
         type: 3}
@@ -11058,7 +11033,7 @@ PrefabInstance:
     - target: {fileID: 975335688007149022, guid: 86233d5ef3f53bd4781303df4a21a247,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -20
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 975335688007149022, guid: 86233d5ef3f53bd4781303df4a21a247,
         type: 3}
@@ -11122,34 +11097,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 975335688077350964, guid: 86233d5ef3f53bd4781303df4a21a247,
         type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 975335688077350964, guid: 86233d5ef3f53bd4781303df4a21a247,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 975335688077350964, guid: 86233d5ef3f53bd4781303df4a21a247,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 975335688077350964, guid: 86233d5ef3f53bd4781303df4a21a247,
-        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1074808219}
-    - target: {fileID: 975335688077350964, guid: 86233d5ef3f53bd4781303df4a21a247,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnDestroyButtonDown
-      objectReference: {fileID: 0}
-    - target: {fileID: 975335688077350964, guid: 86233d5ef3f53bd4781303df4a21a247,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86233d5ef3f53bd4781303df4a21a247, type: 3}
 --- !u!1 &1386010857 stripped
