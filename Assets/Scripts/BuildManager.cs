@@ -13,7 +13,7 @@ public class BuildManager : MonoBehaviour
     //表示当前选择的炮台（要建造的炮台）
     private  TurretData selectedTurretData;
     //表示当前选择的炮台（场景中的游戏物体）
-    private GameObject selectedTurretGo;
+    private MapCube selectedMapCube;
 
     public Text moneyText;
 
@@ -57,11 +57,11 @@ public class BuildManager : MonoBehaviour
                         if (money > selectedTurretData.cost)
                         {
                             ChangeMoney(-selectedTurretData.cost);
-                            mapCube.BuildTurret(selectedTurretData.turretPrefab);
+                            mapCube.BuildTurret(selectedTurretData);
                         }
                         else
                         {
-                            //TODO 提示钱不够
+                            //提示钱不够
                             animatorMoney.SetTrigger("flicker");
                         }
                     }
@@ -79,7 +79,7 @@ public class BuildManager : MonoBehaviour
                         //    ShowUpgradeUI(mapCube.transform.position, false);
                         //}
 
-                        if (mapCube.turretGo == selectedTurretGo && upgradeCanvas.activeInHierarchy)
+                        if (mapCube == selectedMapCube && upgradeCanvas.activeInHierarchy)
                         {
                             StartCoroutine(HideUpgradeUI());
                         }
@@ -87,7 +87,7 @@ public class BuildManager : MonoBehaviour
                         {
                             ShowUpgradeUI(mapCube.transform.position, mapCube.isUpgraded);
                         }
-                        selectedTurretGo = mapCube.turretGo;
+                        selectedMapCube = mapCube;
                     }
                 }
             }
@@ -137,11 +137,14 @@ public class BuildManager : MonoBehaviour
 
     public void OnUpgradeButtonDown()
     {
-        //TODO
+        selectedMapCube.UpgradeTurret();
+        StartCoroutine(HideUpgradeUI());
+        
     }
 
     public void OnDestroyButtonDown()
     {
-       //TODO
+        selectedMapCube.DestroyTurret();
+        StartCoroutine(HideUpgradeUI());
     }
 }
