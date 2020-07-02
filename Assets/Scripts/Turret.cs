@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Turret : MonoBehaviour
 {
-    public List<GameObject> enemys = new List<GameObject>();
+    private List<GameObject> enemys = new List<GameObject>();
 
     void OnTriggerEnter(Collider col)
     {
@@ -24,7 +24,7 @@ public class Turret : MonoBehaviour
 
     public float attackRateTime = 1; //多少秒攻击一次
 
-    public float timer = 0;
+    private float timer = 0;
 
     public GameObject bulletPrefab; //子弹
 

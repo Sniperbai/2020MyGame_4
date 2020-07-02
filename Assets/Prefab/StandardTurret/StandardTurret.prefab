@@ -159,9 +159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc1f4d54814417e478358c37d61b4717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemys: []
   attackRateTime: 1
-  timer: 0
   bulletPrefab: {fileID: 769195725086275907, guid: f5975eccec2fa470ab2c6d3caf145395,
     type: 3}
   firePosition: {fileID: 675715989259842652}

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 985185048861895540}
   - component: {fileID: 985185048858995540}
   - component: {fileID: 985185048860125588}
+  - component: {fileID: -8265078506750568825}
   m_Layer: 0
   m_Name: Missile
   m_TagString: Untagged
@@ -25,8 +26,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 985185048862390100}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -1.4167973, y: 2.294, z: 0.001}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
@@ -79,3 +80,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &-8265078506750568825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985185048862390100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5122f323ffcd4cfdb5a1e90b66cd3e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 50
+  speed: 60
+  explosionEffectPrefab: {fileID: 6555733669258214493, guid: d7f0ed982a081934a9d9e4661240f5a0,
+    type: 3}
