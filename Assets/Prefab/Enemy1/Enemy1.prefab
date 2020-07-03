@@ -332,7 +332,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   hp: 80
-  hpSlider: {fileID: 2204491098467259291}
   effectExplosion: {fileID: 6555733669258214493, guid: bb33a978e831e6e4eae1da8c3d306454,
     type: 3}
   positions: []
