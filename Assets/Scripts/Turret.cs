@@ -32,6 +32,9 @@ public class Turret : MonoBehaviour
 
     public Transform head;
 
+    public bool useLaser = false;
+    public float damageRate = 70;
+
     void Start()
     {
         timer = attackRateTime;
@@ -39,12 +42,19 @@ public class Turret : MonoBehaviour
 
     void Update()
     {
-        timer += Time.deltaTime;
-        if (enemys.Count > 0 && timer >= attackRateTime)
+        if (useLaser = false)
         {
-            timer = 0;
-            Attack();
+            timer += Time.deltaTime;
+            if (enemys.Count > 0 && timer >= attackRateTime)
+            {
+                timer = 0;
+                Attack();
+            }
         }
+        else 
+        {
+        }
+        
 
         if (enemys.Count > 0 && enemys[0] != null)
         {
