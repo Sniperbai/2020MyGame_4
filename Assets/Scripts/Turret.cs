@@ -35,6 +35,8 @@ public class Turret : MonoBehaviour
     public bool useLaser = false;
     public float damageRate = 70;
 
+    public LineRenderer laserRanderer;
+
     void Start()
     {
         timer = attackRateTime;
@@ -51,8 +53,22 @@ public class Turret : MonoBehaviour
                 Attack();
             }
         }
+        else if (enemys.Count > 0)
+        {
+            if (laserRanderer.enabled == false)
+                laserRanderer.enabled = true;
+            if (enemys[0] == null)
+            {
+                UpdateEnemys();
+            }
+            if (enemys.Count > 0)
+            {
+                laserRanderer.SetPositions(new Vector3[] { firePosition.position, enemys[0].transform.position });
+            }
+        }
         else 
         {
+            laserRanderer.enabled = false;
         }
         
 
