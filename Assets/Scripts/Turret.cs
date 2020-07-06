@@ -37,6 +37,8 @@ public class Turret : MonoBehaviour
 
     public LineRenderer laserRanderer;
 
+    public GameObject laserEffect;
+
     void Start()
     {
         timer = attackRateTime;
@@ -57,6 +59,7 @@ public class Turret : MonoBehaviour
         {
             if (laserRanderer.enabled == false)
                 laserRanderer.enabled = true;
+            laserEffect.SetActive(true);
             if (enemys[0] == null)
             {
                 UpdateEnemys();
@@ -64,10 +67,16 @@ public class Turret : MonoBehaviour
             if (enemys.Count > 0)
             {
                 laserRanderer.SetPositions(new Vector3[] { firePosition.position, enemys[0].transform.position });
+                enemys[0].GetComponent<Enemy>().TakeDamage(damageRate * Time.deltaTime);
+                laserEffect.transform.position = enemys[0].transform.position;
+                Vector3 pos = transform.position;
+                pos.y = enemys[0].transform.position.y;
+                laserEffect.transform.LookAt(pos);
             }
         }
         else 
         {
+            laserEffect.SetActive(false);
             laserRanderer.enabled = false;
         }
         

@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class Enemy : MonoBehaviour
 {
     public float speed = 10;
-    public int hp = 150;
-    private int totalHp;
+    public float hp = 150;
+    private float totalHp;
     private Slider hpSlider;
     public GameObject effectExplosion;
     public Transform[] positions;
@@ -53,7 +53,7 @@ public class Enemy : MonoBehaviour
         EnemySpawner.CountEnemyAlive--;
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
         if (hp <= 0) return;
         hp -= damage;
