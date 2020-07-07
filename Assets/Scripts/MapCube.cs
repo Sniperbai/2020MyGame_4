@@ -7,7 +7,8 @@ public class MapCube : MonoBehaviour
 {
     [HideInInspector]
     public GameObject turretGo;   //保存当前cube身上的炮塔
-    private TurretData turretData;
+    [HideInInspector]
+    public TurretData turretData;
 
     [HideInInspector]
     public bool isUpgraded = false;

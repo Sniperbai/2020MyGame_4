@@ -46,7 +46,7 @@ public class Turret : MonoBehaviour
 
     void Update()
     {
-        if (useLaser = false)
+        if (useLaser == false)
         {
             timer += Time.deltaTime;
             if (enemys.Count > 0 && timer >= attackRateTime)

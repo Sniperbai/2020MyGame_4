@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{49B5ED5F-9294-578D-7FC5-01B57534E7FC}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Turret.cs">
     <Files>
-      <File FileName="Assets/Scripts/MapCube.cs" Line="50" Column="80" />
-      <File FileName="Assets/Scripts/BuildManager.cs" Line="24" Column="1" />
-      <File FileName="Assets/Scripts/Turret.cs" Line="74" Column="49" />
+      <File FileName="Assets/Scripts/MapCube.cs" Line="11" Column="34" />
+      <File FileName="Assets/Scripts/BuildManager.cs" Line="155" Column="41" />
+      <File FileName="Assets/Scripts/Turret.cs" Line="49" Column="31" />
       <File FileName="Assets/Scripts/Bullet.cs" />
       <File FileName="Assets/Scripts/EnemySpawner.cs" />
     </Files>
@@ -23,7 +23,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="326937eb-dbcf-45a5-88f4-f1c89302ad2e" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="590a191c-2af5-4227-aaf3-661e4b088e30" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
