@@ -8,11 +8,18 @@ public class EnemySpawner : MonoBehaviour
     public Wave[] waves;
     public Transform START;
     public float waveRate = 0.2f;
+    private Coroutine coroutine;
 
     void Start()
     {
-        StartCoroutine(SpawnEnemy());
+        coroutine = StartCoroutine(SpawnEnemy());
     }
+
+    public void Stop()
+    {
+        StopCoroutine(coroutine);
+    }
+
     IEnumerator SpawnEnemy() 
     {
         foreach (Wave wave in waves)

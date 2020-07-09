@@ -5415,7 +5415,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &656206512
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9666,6 +9666,7 @@ GameObject:
   - component: {fileID: 1074808218}
   - component: {fileID: 1074808217}
   - component: {fileID: 1074808219}
+  - component: {fileID: 1074808220}
   m_Layer: 0
   m_Name: GameManeger
   m_TagString: Untagged
@@ -9759,6 +9760,20 @@ MonoBehaviour:
   animatorMoney: {fileID: 841128514}
   upgradeCanvas: {fileID: 1386010857}
   buttonUpgrade: {fileID: 1386010858}
+--- !u!114 &1074808220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074808216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb3f2031803564c798e267708e8e5c63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  endUI: {fileID: 656206511}
+  title: {fileID: 1938681905}
 --- !u!1 &1090207467
 GameObject:
   m_ObjectHideFlags: 0
