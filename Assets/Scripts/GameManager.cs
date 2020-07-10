@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
@@ -30,5 +31,15 @@ public class GameManager : MonoBehaviour
         enemySpawner.Stop();
         title.text = "Failed!";
         endUI.SetActive(true);
+    }
+
+    public void OnButtonRetry()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void OnButtonMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 }
